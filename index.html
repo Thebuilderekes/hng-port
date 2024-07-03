@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-testid="ekeopre-beredugo">Ekeopre Beredugo</title>
+    <meta
+      name="description"
+      content="A Web developer who specializes in web design and frontend web development."
+    />
+    <meta
+      name="keywords"
+      content="web developer, frontend developer, html, css, JavaScript, react, wordpress"
+    />
+
+    <!--================== index.css =======-->
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+    <!--================== navigation.js =======-->
+    <script defer src="./js/navigation.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__nav-container">
+        <div>
+          <a class="logo" href="/">Ekeopre</a>
+        </div>
+        <!--==================DESKTOP NAVIGATION============================-->
+        <nav class="header__nav-desktop">
+          <ul id="header__nav-desktop__menu-list">
+
+          <li><a href="#" rel="noopener noreferrer">Home</a></li>
+          <li><a data-testid="hngLink" href="https://hng.tech/learn">HNG Tech</a></li>
+          <li><a data-testid="keywordLink" href="https://keyword.dog" rel="noopener noreferrer">Keyword dog</a></li>
+
+          <li><a data-testid="scrapeanywebLink" href="https://Scrapeanyweb.site" >Scrapeanywebsite</a></li>
+            </li>
+          </ul>
+
+          <button
+            id="header__nav-menu-toggle__btn"
+            aria-label="Toggle navigation menu"
+            class="nav-toggle"
+            aria-controls="header__nav--mobile"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+      <!--================== DESKTOP NAVIGATION ENDS ============================-->
+
+      <!--================== MOBILE NAVIGATION ============================-->
+      <nav
+        class="header__nav--mobile"
+        id="header__nav--mobile"
+        aria-labelledby="header__nav-menu-toggle__btn"
+      >
+        <ul class="header__nav-mobile__menu-list">
+          <li><a href="#" rel="noopener noreferrer">Home</a></li>
+          <li><a data-testid="hngLink" href="https://hng.tech/learn">HNG Tech</a></li>
+          <li><a data-testid="keywordLink" href="https://keyword.dog" rel="noopener noreferrer">Keyword dog</a></li>
+
+          <li><a data-testid="scrapeanywebLink" href="https://Scrapeanyweb.site" >Scrapeanywebsite</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--================== MOBILE NAVIGATION ENDS============================-->
+
+    <!--==================HERO SECTION============================-->
+    <main>
+      <section class="hero__section">
+          <div class="hero__section-text">
+        <h1 class="headline" data-testid="ekeopre-beredugo">
+          EKEOPRE BEREDUGO
+        </h1>
+      <h2>Front-end developer</h2>  
+          <p class="hero__p">
+             Welcome to my website. I'm Ekeopre and I'm deeply passionate about developing user friendly
+             websites. <br /><br>
+
+            As a lifelong learner, I'm committed to staying updated on the
+            latest trends and technologies and I plan to actively engage with
+            the developer community by attending meetups, conferences, and
+            online forums. I would also love to contribute back by writing blog
+            posts, creating open-source components, or potentially mentoring
+            other developers. <br><br>
+            For me to achieve this, my goal for the next 2 years is to secure a frontend developer role
+            within a company that prioritizes creativity, innovation, and
+            collaboration. I am confident that my dedication to continuous
+            learning, strong technical skillset, and passion for building
+            exceptional user experiences will make me a valuable asset. <br />
+            <br />
+          </p>
+         </div>
+          <div class="profile__img-container">
+            <img
+              data-testid="slackProfilePicture"
+              srcset="
+                ./assets/img/portfolio-img300.jpeg 480w,
+                ./assets/img/portfolio-img592.jpeg 800w
+              "
+              sizes="(max-width: 600px) 480px, 100%"
+              alt="Image description"
+            />
+          </div>
+
+      </section>
+
+      <section class="technologies__container">
+        <article class="technologies">
+          <h2 class="tagline">TECH STACK</h2>
+          <ul class="widget">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Git</li>
+            <li>JavaScript</li>
+          </ul>
+        </article>
+
+        <div class="work__cv-links widget">
+          <a class="work" href="#project__showcase-section">VIEW PROJECTS</a>
+
+          <a
+            class="download__cv"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            >DOWNLOAD CV</a
+          >
+        </div>
+        <img
+          id="floating__arrow"
+          width="60px"
+          height="60px"
+          src="./assets/img/icons8-down-arrow-ios-16-glyph/icons8-down-arrow-60.png"
+          alt="an arrow point downwards"
+        />
+      </section>
+      <!--==================HERO SECTION ENDS ============================-->
+      <section class="skills__section">
+        <h2 class="tagline">MY SKILLS</h2>
+
+        <div class="grid__cards">
+          <article class="punchline">
+            <img
+              width="80px"
+              height="80px"
+              class="tagline"
+              src="/assets/img//design-icon/icons8-design-80.png"
+              alt="ui design icon"
+            />
+            <h3 class="widget">UI design</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              cumque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quidem mollitia autem soluta beatae iure quaerat porro
+              cupiditate hic incidunt.!
+            </p>
+          </article>
+          <article class="punchline">
+            <img
+              width="80px"
+              height="80px"
+              class="tagline"
+              src="/assets/img/icons8-web-development-dotted/icons8-web-development-80.svg"
+              alt="web development icon"
+            />
+            <h3 class="widget">Web development</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              cumque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quidem mollitia autem soluta beatae iure quaerat porro
+              cupiditate hic incidunt.!
+            </p>
+          </article>
+          <article class="punchline">
+            <img
+              width="80px"
+              height="80px"
+              class="tagline"
+              src="/assets/img/seo-icon/icons8-seo-80.png"
+              alt="seo icon"
+            />
+            <h3 class="widget">Technical writing</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+              cumque Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quidem mollitia autem soluta beatae iure quaerat porro
+              cupiditate hic incidunt.!
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--============PORTFO:LIO SECTION ======================-->
+
+      <section id="project__showcase-section" class="project__showcase-section">
+        <h2 class="tagline">PROJECT SHOWCASE</h2>
+
+        <article class="case__study punchline">
+          <figure class="case__study-figure-container">
+            <a href="./pages/project1.html">
+              <img
+                class="widget"
+                src="https://picsum.photos/300/300"
+                alt="snapshot of a grocery app homepage"
+              />
+            </a>
+          </figure>
+          <div class="vertical__line"></div>
+          <div class="case__study-text tagline">
+            <h3>Project name</h3>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Visit website</a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+              alias ipsa quo officia, distinctio explicabo natus esse doloribus
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
+              esse doloribus voluptatum.
+            </p>
+            <div class="case__study-text-links">
+              <a href="./pages/project1.html"
+                ><img
+                  class="case__study-icon"
+                  src="./assets/img/icons8-case-study-ios-17/icons8-case-study-30.png"
+                  alt=""
+                /><span>Case study</span></a
+              >
+              <a aria-label="visit github page" href="#" target="_blank">
+                <svg
+                  xmlnsXlink="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  {' '}
+                  <title>View code on GitHub</title>
+                  {' '}
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                    fill="#fff"
+                  />
+                </svg>
+                <span> GitHub </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case__study punchline">
+          <figure class="case__study-figure-container">
+            <a href="./pages/project1.html">
+              <img
+                class="widget"
+                src="https://picsum.photos/300/300"
+                alt="snapshot of a grocery app homepage"
+              />
+            </a>
+          </figure>
+          <div class="vertical__line"></div>
+          <div class="case__study-text tagline">
+            <h3>Project name</h3>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Visit website</a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+              alias ipsa quo officia, distinctio explicabo natus esse doloribus
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
+              esse doloribus voluptatum.
+            </p>
+            <div class="case__study-text-links">
+              <a href="./pages/project1.html"
+                ><img
+                  class="case__study-icon"
+                  src="./assets/img/icons8-case-study-ios-17/icons8-case-study-30.png"
+                  alt=""
+                /><span>Case study</span></a
+              >
+              <a aria-label="visit github page" href="#" target="_blank">
+                <svg
+                  xmlnsXlink="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  {' '}
+                  <title>View code on GitHub</title>
+                  {' '}
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                    fill="#fff"
+                  />
+                </svg>
+                <span> GitHub </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="case__study punchline">
+          <figure class="case__study-figure-container">
+            <a href="./pages/project1.html">
+              <img
+                class="widget"
+                src="https://picsum.photos/300/300"
+                alt="snapshot of a grocery app homepage"
+              />
+            </a>
+          </figure>
+          <div class="vertical__line"></div>
+          <div class="case__study-text tagline">
+            <h3>Project name</h3>
+            <a href="#" target="_blank" rel="noopener noreferrer"
+              >Visit website</a
+            >
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed harum
+              alias ipsa quo officia, distinctio explicabo natus esse doloribus
+              voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sed harum alias ipsa quo officia, distinctio explicabo natus
+              esse doloribus voluptatum.
+            </p>
+            <div class="case__study-text-links">
+              <a href="./pages/project1.html"
+                ><img
+                  class="case__study-icon"
+                  src="./assets/img/icons8-case-study-ios-17/icons8-case-study-30.png"
+                  alt=""
+                /><span>Case study</span></a
+              >
+              <a aria-label="visit github page" href="#" target="_blank">
+                <svg
+                  xmlnsXlink="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                >
+                  {' '}
+                  <title>View code on GitHub</title>
+                  {' '}
+                  <path
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z"
+                    fill="#fff"
+                  />
+                </svg>
+                <span> GitHub </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!--=========PORTFOLIO SECTION ENDS ==================-->
+    </main>
+      </section>
+      <!--=========PORTFOLIO SECTION ENDS ==================-->
+    </main>
+
+
+
+      </section>
+
+      <!--=========PORTFOLIO SECTION ENDS ==================-->
+    </main>
+    <!--==================FOOTER ============================-->
+
+    <footer id="footer">
+      <div class="container">
+        <div class="my-name">
+          <h3 data-testid="ekeopre-beredugo">Ekeopre Beredugo</h3>
+        </div>
+        <nav class="footer-nav">
+          <ul class="footer-menu-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="contact-info">
+          <h3>Contact</h3>
+          <address>
+            <a class="email" data-testid="ekeopreberedugo@yahoo.com" href="#"
+              >ekeopreberdugo@yahoo.com</a
+            ><br /><br /><br />
+            <a class="hire-me" href="#">HIRE ME</a>
+          </address>
+        </div>
+      </div>
+      <div class="attributions">
+        <a
+          target="_blank"
+          href="https://icons8.com/icon/102698/instagram-check-mark"
+          >Icons by</a
+        >
+        <a target="_blank" href="https://icons8.com">Icons8</a>
+      </div>
+      <p class="credits">
+        Made by
+        <a
+          href="https://www.linkedin.com/in/ekeopre-beredugo-204580111/"
+          target="_blank"
+          >The Builder.</a
+        >
+      </p>
+    </footer>
+    <!--==================FOOTER ENDS============================-->
+  </body>
+</html>
