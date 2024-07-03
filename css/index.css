@@ -42,6 +42,7 @@ img {
   );
   --mid-black: #212121;
   --dark-lavender: #2c2c99;
+  --dark-grey: #243441;
 }
 /*==================GENERAL STYLES ============================*/
 
@@ -381,10 +382,6 @@ h2 {
   .hero__section .hero__section-text {
     width: 60%;
   }
-  .hero__section img {
-    width: 500px;
-    height: 500px;
-  }
 }
 
   .hero__section .hero__section-text p {
@@ -506,7 +503,7 @@ h2 {
 
 .skills__section {
   color: var(--soft-white);
-  background-color: var(--dark-lavender);
+  background-color: var(--dark-grey);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -521,17 +518,12 @@ h2 {
 .skills__section h2 {
   font-size: var(--large-fs);
 }
-@media (min-width: 600px) {
-  .hero__section figure {
-    padding: var(--medium-spacing);
-    display: flex;
-    justify-content: flex-end;
-  }
 }
 
 .skills__section .grid__cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 95%;
   margin: var(--large-spacing) 0;
   gap: 2rem;
@@ -545,8 +537,9 @@ h2 {
 }
 
 .grid__cards article {
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid var(--softer-white);
   padding: var(--large-spacing);
 }
